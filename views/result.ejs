@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercise1.css" type="text/css">
+    <title>Vote Result</title>
+</head>
+<body>
+     
+    <div id = "container">   
+        <h1>Kanye is <%= Emotion %> </h1>
+        <% if (mood === "1") { %>
+            <img src="upvote_kanye.png" alt="Kanye smile image">
+        <% } else { %>
+            <img src="downvote_kanye-1-1.jpg" alt="Kanye sad image">        
+        <% } %>
+        <form action="/vote" method="post">
+            <input type="submit" name = "retry" value="Try Again">
+        </form>
+    </div>
+</body>
+</html>
